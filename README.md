@@ -66,20 +66,29 @@ classDiagram
         <<abstract>>
         #int id
         #String name
+        #String crewClass
+        #String gender
         #int energy
+        #int maxEnergy
         #int skill
         #int experience
-        +attack()*
-        +specialAbility()*
+        #int killCount
+        #boolean inMedbay
+        +attack()* int
+        +specialAbility()* int
         +takeDamage(int)
+        +heal(int)
+        +restoreFullEnergy()
         +gainExperience(int)
         +sendToMedbay()
+        +recordMission()
+        +recordVictory()
     }
-    class Soldier { +attack() +specialAbility() }
-    class Medic { +attack() +specialAbility() }
-    class Pilot { +attack() +specialAbility() }
-    class Engineer { +attack() +specialAbility() }
-    class Scientist { +attack() +specialAbility() }
+    class Soldier { +attack() +specialAbility() +getImageResId() }
+    class Medic { +attack() +specialAbility() +getImageResId() }
+    class Pilot { +attack() +specialAbility() +getImageResId() }
+    class Engineer { +attack() +specialAbility() +getImageResId() }
+    class Scientist { +attack() +specialAbility() +getImageResId() }
     
     Crew <|-- Soldier
     Crew <|-- Medic
@@ -87,29 +96,71 @@ classDiagram
     Crew <|-- Engineer
     Crew <|-- Scientist
 
+    class Alien {
+        -String name
+        -int energy
+        -int maxEnergy
+        -int damage
+        +generateAlien(int)$ Alien
+        +attack() int
+        +takeDamage(int)
+        +isAlive() boolean
+    }
+
     class ColonyArchive {
         -HashMap~Integer, Crew~ crewMap
         +addCrew(Crew)
-        +getAvailableCrew()
+        +getCrew(int) Crew
+        +getAllCrew() List~Crew~
+        +getAvailableCrew() List~Crew~
+        +getMedbayCrew() List~Crew~
+        +progressMedbayRecoveryForAll()
     }
     
     class CombatManager {
         -Crew lead
-        -List~Crew~ reserves
+        -Crew reserve1
+        -Crew reserve2
         -Alien alien
-        +attack()
-        +swapCrew()
-        +enemyTurn()
+        -MissionType missionType
+        +attack() String
+        +defend() String
+        +useSpecial() String
+        +swapToReserve1() String
+        +enemyTurn() String
+        +checkDeaths() String
+        +isVictory() boolean
+        +isGameOver() boolean
     }
     
+    class MissionType {
+        <<enumeration>>
+        COMBAT
+        REPAIR_STATION
+        MEDICAL_OUTPOST
+        RESEARCH_LAB
+        +getSkillBonus(Crew) int
+    }
+
     class SaveManager {
-        +saveToFile(Context, ColonyArchive)
-        +loadFromFile(Context)
+        +save(Context, ColonyArchive)$
+        +load(Context)$ ColonyArchive
+        +saveToFile(Context, ColonyArchive)$
+        +loadFromFile(Context)$ ColonyArchive
+    }
+
+    class CrewTypeAdapter {
+        +serialize(Crew, Type, JsonSerializationContext) JsonElement
+        +deserialize(JsonElement, Type, JsonDeserializationContext) Crew
     }
 
     ColonyArchive o-- Crew
     CombatManager o-- Crew
-    CombatManager --> Alien
+    CombatManager o-- Alien
+    CombatManager o-- MissionType
+    SaveManager ..> ColonyArchive : handles
+    SaveManager ..> CrewTypeAdapter : uses
+    CrewTypeAdapter ..> Crew : adapts
 ```
 
 ---
