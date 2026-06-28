@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="28dp" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/quarters"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerCrew"
+        android:layout_width="match_parent"
+        android:layout_height="203dp"
+        android:layout_marginBottom="16dp"
+        android:layout_weight="1" />
+
+    <Button
+        android:id="@+id/btnRecruit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/recruit_crew"
+        android:layout_marginBottom="8dp" />
+
+    <Button
+        android:id="@+id/btnSimulator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/simulator"
+        android:layout_marginBottom="8dp" />
+
+    <Button
+        android:id="@+id/btnMissionControl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/mission_control" />
+
+    <Button
+        android:id="@+id/btnStats"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/statistics"
+        android:layout_marginTop="8dp" />
+
+    <Button
+        android:id="@+id/btnSaveFile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save Colony to File"
+        android:layout_marginTop="8dp" />
+
+    <Button
+        android:id="@+id/btnLoadFile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Load Colony from File"
+        android:layout_marginTop="8dp" />
+
+    <FrameLayout
+        android:id="@+id/fragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="16dp"
+        android:layout_weight="1">
+
+    </FrameLayout>
+
+</LinearLayout>

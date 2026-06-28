@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootMission"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="28dp" />
+
+        <TextView
+            android:id="@+id/tvFloor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Floor 1"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/tvMissionDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mission description"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp" />
+
+        <ImageView
+            android:id="@+id/imgAlien"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/alien_01"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:id="@+id/tvAlienName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Alien"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ProgressBar
+            android:id="@+id/progressAlien"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="100"
+            android:progress="100"
+            android:layout_marginBottom="16dp" />
+
+        <ImageView
+            android:id="@+id/imgLead"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:id="@+id/tvLeadCrew"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lead Crew"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <ProgressBar
+            android:id="@+id/progressLead"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="100"
+            android:progress="100"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:id="@+id/tvPartnerCrew"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Partner Crew"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/btnAttack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Attack"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/btnDefend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Defend"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/btnSpecial"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Use Special Ability"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/btnSwap1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/swap_with_reserve_1"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/btnSwap2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/swap_with_reserve_2"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:id="@+id/tvMedKitCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/medkits_0"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="12dp" />
+
+        <Button
+            android:id="@+id/btnUseMedKit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/use_medkit"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/combat_log"
+            android:textStyle="bold"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tvCombatLog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/battle_begins"
+            android:padding="12dp"
+            android:layout_marginTop="8dp" />
+
+    </LinearLayout>
+</ScrollView>

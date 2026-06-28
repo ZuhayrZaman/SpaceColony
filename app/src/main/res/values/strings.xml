@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">SpaceColony</string>
+    <string name="swap_with_reserve_1">Swap with Reserve 1</string>
+    <string name="swap_with_reserve_2">Swap with Reserve 2</string>
+    <string name="use_medkit">Use MedKit</string>
+    <string name="combat_log">Combat Log</string>
+    <string name="battle_begins">Battle begins...</string>
+    <string name="statistics">Statistics</string>
+    <string name="mission_control">Mission Control</string>
+    <string name="simulator">Simulator</string>
+    <string name="recruit_crew">Recruit Crew Member</string>
+    <string name="quarters">Quarters</string>
+    <string name="confirm">Confirm</string>
+    <string name="engineer">Engineer</string>
+    <string name="scientist">Scientist</string>
+    <string name="medic">Medic</string>
+    <string name="pilot">Pilot</string>
+    <string name="soldier">Soldier</string>
+    <string name="enter_crew_name">Enter crew member name</string>
+    <string name="partner_crew">Partner Crew Member</string>
+    <string name="start_mission">Start Mission</string>
+    <string name="reserve_2">Reserve 2</string>
+    <string name="mission_type">Mission Type</string>
+    <string name="stats_summary">Stats summary</string>
+    <string name="colony_statistics">Colony Statistics</string>
+    <string name="train_crew">Train Crew Member</string>
+    <string name="medbay">Medbay</string>
+    <string name="medkits_0">MedKits: 0</string>
+    <string name="welcome_to_space_colony">Welcome to Space Colony</string>
+    <string name="click_to_begin">Click on start to begin</string>
+    <string name="start">Start</string>
+</resources>
