@@ -88,13 +88,13 @@ The main loop centers on risk control. You decide whether to continue for better
 
 ## Application Use-Flow
 
-![Image placeholder: Insert Flowchart](UML_class_diagram.png)
+![Image placeholder: Insert Flowchart](User_Interface_Flow_Chart.png)
 
 ---
 
 ## UML Class Diagram
 
-![Image placeholder: Insert Flowchart](User_Interface_Flow_Chart.png)
+![Image placeholder: Insert Flowchart](UML_class_diagram.png)
 
 ### Class Mapping
 
