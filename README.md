@@ -1,5 +1,7 @@
 # Space Colony - Project Work Plan
 
+---
+
 ## Table of Contents
 
 1. [Project Introduction](#project-introduction)
@@ -86,13 +88,13 @@ The main loop centers on risk control. You decide whether to continue for better
 
 ## Application Use-Flow
 
-*(Image placeholder: Insert Flowchart)*
+![Image placeholder: Insert Flowchart](UML_class_diagram.png)
 
 ---
 
 ## UML Class Diagram
 
-*(Image placeholder: Insert UML Diagram)*
+![Image placeholder: Insert Flowchart](User_Interface_Flow_Chart.png)
 
 ### Class Mapping
 
@@ -114,7 +116,6 @@ The main loop centers on risk control. You decide whether to continue for better
 *   **Project Group:** Ƶ
 *   **Name:** Zuhayr Zaman
 *   **Student Number:** 003153051
-*   **Email:** [zuhayr.zaman@student.lut.fi](mailto:zuhayr.zaman@student.lut.fi)
 *   **Degree:** Software and Systems Engineering (1st Year)
 
 ---
@@ -132,5 +133,5 @@ AI tools (Large Language Models) were utilized for:
 
 ## Links
 
-*   **GitHub Repository:** [Insert Link Here]
-*   **Project Video Description:** [Insert Link Here]
+*   **GitHub Repository:** [SpaceColony](https://github.com/ZuhayrZaman/SpaceColony)
+*   **Project Video Description:** [Explanation Video]
