@@ -95,8 +95,8 @@ The main loop centers on risk control. You decide whether to continue for better
 
 ### Class Mapping
 
-| Class Name | Responsibility | Key Attributes / Methods |
-| :--- | :--- | :--- |
+| Class Name | Responsibility |
+| :--- | :--- |
 | Crew | Base model for crew members. |
 | Soldier / Pilot... | Specialized crew via polymorphism. |
 | Alien | System-generated threat. |
