@@ -11,9 +11,6 @@
 5. [Core Game Mechanics](#core-game-mechanics)
 6. [Application Use-Flow](#application-use-flow)
 7. [UML Class Diagram](#uml-class-diagram)
-8. [Team Description](#team-description)
-9. [AI Usage Disclaimer](#ai-usage-disclaimer)
-10. [Links](#links)
 
 ---
 
@@ -100,38 +97,11 @@ The main loop centers on risk control. You decide whether to continue for better
 
 | Class Name | Responsibility | Key Attributes / Methods |
 | :--- | :--- | :--- |
-| Crew | Base model for crew members. | name, energy, skill, experience, inMedbay; gainExperience() |
-| Soldier / Pilot... | Specialized crew via polymorphism. | attack(), specialAbility(), getImageResId() |
-| Alien | System-generated threat. | energy, damage; generateAlien(), attack() |
-| ColonyArchive | Manages crew collection. | crewMap (HashMap); addCrew(), getAvailableCrew() |
-| CombatManager | Orchestrates turn-based combat. | lead, reserves, alien; attack(), enemyTurn(), swap() |
-| MissionType (Enum) | Defines mission categories/bonuses. | COMBAT, REPAIR_STATION; getSkillBonus() |
-| SaveManager | Data persistence. | save(), load(), saveToFile() |
-| CrewTypeAdapter | GSON adapter for polymorphism. | serialize(), deserialize() |
-
----
-
-## Team Description
-
-*   **Project Group:** Ƶ
-*   **Name:** Zuhayr Zaman
-*   **Student Number:** 003153051
-*   **Degree:** Software and Systems Engineering (1st Year)
-
----
-
-## AI Usage Disclaimer
-
-AI tools (Large Language Models) were utilized for:
-*   Generating standard Android Activity templates and XML layouts.
-*   Debugging complex logic within the CombatManager.
-*   Formatting and refining project documentation.
-*   Android UI Development & RecyclerView implementation.
-*   Visual Assets.
-
----
-
-## Links
-
-*   **GitHub Repository:** [SpaceColony](https://github.com/ZuhayrZaman/SpaceColony)
-*   **Project Video Description:** [Explanation Video]
+| Crew | Base model for crew members. |
+| Soldier / Pilot... | Specialized crew via polymorphism. |
+| Alien | System-generated threat. |
+| ColonyArchive | Manages crew collection. |
+| CombatManager | Orchestrates turn-based combat. |
+| MissionType (Enum) | Defines mission categories/bonuses. |
+| SaveManager | Data persistence. |
+| CrewTypeAdapter | GSON adapter for polymorphism. |
