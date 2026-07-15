@@ -102,6 +102,6 @@ The main loop centers on risk control. You decide whether to continue for better
 | Alien | System-generated threat. |
 | ColonyArchive | Manages crew collection. |
 | CombatManager | Orchestrates turn-based combat. |
-| MissionType (Enum) | Defines mission categories/bonuses. |
+| MissionType | Defines mission categories/bonuses. |
 | SaveManager | Data persistence. |
 | CrewTypeAdapter | GSON adapter for polymorphism. |
